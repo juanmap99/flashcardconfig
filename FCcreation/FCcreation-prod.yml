@@ -1,0 +1,18 @@
+management:
+    endpoints:
+        env.keys-to-sanitize: password,secret
+        web.exposure.include: health,info,metrics,logfile,loggers,env,beans,mappings,configprops
+    endpoint:
+        health:
+            enabled: true
+            show-details: always
+        info.enabled: true
+        metrics.enabled: true
+        logfile.enabled: true
+        loggers.enabled: true
+        env:
+            show-values: ALWAYS
+            enabled: true
+        beans.enabled: true
+        mappings.enabled: true
+        configprops.enabled: true
